@@ -15,7 +15,9 @@
 - Create a ClusterIP service for load balancing backend application. 
 ```
 # Create Deployment for Backend Rest App
-kubectl create deployment my-backend-rest-app --image=stacksimplify/kube-helloworld:1.0.0 
+kubectl create deployment my-backend-rest-app --image=stacksimplify/kube-helloworld:1.0.0
+kubectl get pods
+kubectl logs -f <pod name>
 kubectl get deploy
 
 # Create ClusterIp Service for Backend Rest App
@@ -54,6 +56,8 @@ server {
 ```
 # Create Deployment for Frontend Nginx Proxy
 kubectl create deployment my-frontend-nginx-app --image=stacksimplify/kube-frontend-nginx:1.0.0 
+kubectl get pods
+kubectl logs -f <pod name>
 kubectl get deploy
 
 # Create ClusterIp Service for Frontend Nginx Proxy
