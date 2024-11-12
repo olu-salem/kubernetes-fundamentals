@@ -38,6 +38,7 @@ kubectl get rs
 ```
 # List Pods
 kubectl get pods
+kubectl describe <one of the pods>
 
 # Delete Pod
 kubectl delete pod <Pod-Name>
